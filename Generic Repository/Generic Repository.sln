@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic Repository", "Generic Repository\Generic Repository.csproj", "{B3248661-CFDD-42CE-801C-6353F7957867}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{DC481265-0ACC-4BD1-84A7-E4A49522181F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic Repository.Example1", "Generic Repository.Example1\Generic Repository.Example1.csproj", "{A5CB665C-E3CD-4C1F-B475-66A02842BD2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{B3248661-CFDD-42CE-801C-6353F7957867}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3248661-CFDD-42CE-801C-6353F7957867}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3248661-CFDD-42CE-801C-6353F7957867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5CB665C-E3CD-4C1F-B475-66A02842BD2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5CB665C-E3CD-4C1F-B475-66A02842BD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5CB665C-E3CD-4C1F-B475-66A02842BD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5CB665C-E3CD-4C1F-B475-66A02842BD2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5CB665C-E3CD-4C1F-B475-66A02842BD2C} = {DC481265-0ACC-4BD1-84A7-E4A49522181F}
 	EndGlobalSection
 EndGlobal
