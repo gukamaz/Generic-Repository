@@ -23,7 +23,14 @@ namespace Generic_Repository.Example1
 
             context.SaveChanges();
 
-            var categoriesList = Categories.GetAll();
+            var category = Categories.GetAll().First();
+            Console.WriteLine(string.Format("{0} - {1}", category.ID, category.Name));
+
+            Categories.Remove(category.ID);
+            context.SaveChanges();
+
+            Console.WriteLine(Categories.GetAll().Count());
         }
+
     }
 }
