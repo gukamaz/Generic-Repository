@@ -9,7 +9,7 @@ namespace Generic_Repository.Example1.Models.Context
 {
     class ShopContext : DbContext
     {
-        public ShopContext() : base("name=ShopContext")
+        public ShopContext() : base("name=test")
         {
         }
 
