@@ -44,7 +44,7 @@ namespace Generic_Repository.Repository
 
         public IEnumerator<TEntity> GetEnumerator()
         {
-            return Context.Set<TEntity>().AsEnumerable().GetEnumerator();
+            return GetAll().GetEnumerator();
         }
 
         public IQueryable<TEntity> GetRange(Expression<Func<TEntity, bool>> predicate)
@@ -69,7 +69,7 @@ namespace Generic_Repository.Repository
         {
             get
             {
-                throw new NotImplementedException();
+                return GetAll().Expression;
             }
         }
 
@@ -77,7 +77,7 @@ namespace Generic_Repository.Repository
         {
             get
             {
-                throw new NotImplementedException();
+                return typeof (TEntity);
             }
         }
 
@@ -85,13 +85,13 @@ namespace Generic_Repository.Repository
         {
             get
             {
-                throw new NotImplementedException();
+                return GetAll().Provider;
             }
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+           return GetAll().GetEnumerator();
         }
 
         public void Dispose()
